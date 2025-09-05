@@ -1,8 +1,7 @@
-#NOTA: STATIC METHODS POR QUE SI NO LANZA ERROR POR FALTA DE INSTANCIAMIENTO (falta de tiempo)
 
 class InicioPAM:
     @staticmethod
-    def reglamentoPoo():
+    def reglamentoPAM():
         
         reglamento = {
             1: "Se requiere 80% de asistencia para tener derecho a evaluación parcial y 80% de trabajos en clase.",
@@ -24,11 +23,20 @@ class InicioPAM:
             17: "Este reglamento entra en vigor después de que se firme o se acepte por la mayoría de los estudiantes asistentes a la primera sesión de la materia, una vez firmado o aceptado por el 50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión."
         }
         return reglamento
+    
+
     @staticmethod
     def lineamientosClassRoom():
-        ReglamentoPOO = {
-            "": ""
+        lineamientos = {
+            "1": "evidencia desempeño",
+            "2": "PARTICIPACIÓN ACTIVA",
+            "3": "TRABAJOS EN CLASSROOM: portada (diseño libre(logo UPQ, tema, datos del alumno, materia)) conclusión de aprendizaje (descripción de lo aprendido)",
+            "4": "ENTREGAS COMPLETAS",
+            "5": "RESPETAR TIEMPOS DE ENTREGA",
+            "6": "PRESENTACIÓN DE TRABAJOS DE NIVEL UNIVERSITARIO"
         }
+
+        return lineamientos
 
     
     @staticmethod
@@ -40,6 +48,8 @@ class InicioPAM:
         }
 
         return fechasParciales
+    
+
     @staticmethod
     def porcentajesPorParcial():
         porcentajesParcial = {
@@ -64,4 +74,5 @@ class InicioPAM:
         }
 
         return porcentajesParcial
+
 
